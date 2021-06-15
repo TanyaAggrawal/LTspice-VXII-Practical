@@ -1,0 +1,10 @@
+* C:\Users\Tanya\Desktop\Lftspice\Draft1.asc
+V1 N003 0 PULSE(0 10 1m 1u 1u 3m 20m 5)
+V2 N001 0 SINE(0 100 50 0 0 20m 5)
+R1 N004 N003 100
+R2 N001 N002 10
+XU1 N002 0 N004 TN3050H-12LY
+.inc C:\Program Files\LTC\LTspiceXVII\lib\high-temperature_scr_pspice\st_high-temperature_scr.lib
+.tran 100ms
+.backanno
+.end
